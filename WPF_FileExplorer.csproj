@@ -18,4 +18,12 @@
     <Resource Include="yazirusi.png" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EditorConfigFiles Remove="G:\User_Files\Dev\mochineko\WPF_FileExplorer\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="G:\User_Files\Dev\mochineko\WPF_FileExplorer\.editorconfig" />
+  </ItemGroup>
+
 </Project>
