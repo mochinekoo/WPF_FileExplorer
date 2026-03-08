@@ -8,4 +8,14 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="hidariyazirusi.png" />
+    <None Remove="yazirusi.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="hidariyazirusi.png" />
+    <Resource Include="yazirusi.png" />
+  </ItemGroup>
+
 </Project>

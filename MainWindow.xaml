@@ -7,6 +7,56 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
+        <Menu Grid.Row="0" Grid.ColumnSpan="3">
+            <MenuItem Header="ファイル">
+                <MenuItem Header="開く"></MenuItem>
+                <MenuItem Header="閉じる"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="ヘルプ">
+                <MenuItem Header="このアプリについて"></MenuItem>
+            </MenuItem>
+        </Menu>
+
+        <!--検索ボックス-->
+        <Grid Grid.Row="1" Grid.ColumnSpan="3" Margin="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="200"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            
+            <Button Grid.Column="0" Background="Transparent">
+                <Image Source="hidariyazirusi.png"></Image>
+            </Button>
+            <Button Grid.Column="1" Background="Transparent">
+                <Image Source="/yazirusi.png"></Image>
+            </Button>
+            <TextBox Grid.Column="2" Margin="0,0,5,0"/>
+            <TextBox Grid.Column="3" Margin="0,0,5,0"/>
+
+        </Grid>
+
+        <TreeView Grid.Row="2" Grid.Column="0">
+            <TreeViewItem Header="デスクトップ">
+                
+            </TreeViewItem>
+        </TreeView>
+
+        <GridSplitter Grid.Row="2" Grid.Column="1" Width="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
     </Grid>
 </Window>
