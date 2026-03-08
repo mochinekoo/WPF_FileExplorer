@@ -1,0 +1,30 @@
+[*]
+indent_style = space
+root = true
+
+# Xml files
+[*.xml]
+indent_size = 2
+
+# C# files
+[*.cs]
+charset = utf-8
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+csharp_new_line_before_open_brace = none
+
+csharp_new_line_before_open_brace_types = false 
+csharp_new_line_before_open_brace_methods = false
+csharp_new_line_before_open_brace_properties = false
+csharp_new_line_before_open_brace_accessors = false
+csharp_new_line_before_open_brace_anonymous_methods = false
+csharp_new_line_before_open_brace_control_blocks = false
+csharp_new_line_before_open_brace_anonymous_types = false
+csharp_new_line_before_open_brace_object_collection_array_initializers = false
+csharp_new_line_before_open_brace_lambda_expression = false
+csharp_new_line_before_open_brace_local_function = false
+
+dotnet_naming_rule.private_fields_underscore.severity = suggestion
